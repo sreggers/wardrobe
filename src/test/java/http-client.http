@@ -1,0 +1,11 @@
+###
+GET http://localhost:8080/clothing
+
+###
+POST http://localhost:8080/clothing
+Content-Type: application/json
+
+{
+  "name": "test",
+  "imageSrc": "fghffgghgjlhjh"
+}
