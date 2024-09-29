@@ -1,4 +1,8 @@
 package dev.kwispel.wardrobe.command;
 
-public record CreateClothingCommand(String name, String imageSrc) {
+import dev.kwispel.wardrobe.domain.Tag;
+
+import java.util.Set;
+
+public record CreateClothingCommand(String name, String imageSrc, Set<Tag> tags) {
 }

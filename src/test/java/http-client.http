@@ -1,5 +1,8 @@
 ###
-GET http://localhost:8080/clothing
+GET http://localhost:8080/clothing/all
+
+###
+GET http://localhost:8080/clothing?tags=tag1,tag2
 
 ###
 POST http://localhost:8080/clothing
@@ -7,5 +10,10 @@ Content-Type: application/json
 
 {
   "name": "test",
-  "imageSrc": "fghffgghgjlhjh"
+  "imageSrc": "fghffgghgjlhjh",
+  "tags": [
+    "tag1",
+    "tag2",
+    "tag3"
+  ]
 }
