@@ -5,7 +5,7 @@ import dev.kwispel.wardrobe.domain.Tag;
 
 import java.util.Set;
 
-public record CreateClothingCommand(
+public record UpdateClothingCommand(
         String name,
         String imageSrc,
         Set<Tag> tags,

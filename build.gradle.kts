@@ -12,6 +12,8 @@ val quarkusPlatformGroupId: String by project
 val quarkusPlatformArtifactId: String by project
 val quarkusPlatformVersion: String by project
 
+val mapstructVersion: String = "1.6.2"
+
 dependencies {
     implementation(enforcedPlatform("${quarkusPlatformGroupId}:${quarkusPlatformArtifactId}:${quarkusPlatformVersion}"))
     implementation("io.quarkus:quarkus-rest")
@@ -20,7 +22,9 @@ dependencies {
     implementation("io.quarkus:quarkus-mongodb-panache")
     implementation("io.quarkus:quarkus-rest-client")
     implementation("io.quarkus:quarkus-arc")
+    implementation("org.mapstruct:mapstruct:${mapstructVersion}")
     testImplementation("io.quarkus:quarkus-junit5")
+    annotationProcessor("org.mapstruct:mapstruct-processor:${mapstructVersion}")
 }
 
 group = "dev.kwispel"

@@ -17,3 +17,12 @@ Content-Type: application/json
     "tag3"
   ]
 }
+
+###
+@id = 6708136f12abd94332291a34
+PATCH http://localhost:8080/clothing/{{id}}
+Content-Type: application/json
+
+{
+  "name": "test2"
+}
